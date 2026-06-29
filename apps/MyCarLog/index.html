@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCarLog TopPage - HiroNest Works</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            display: flex;
+        }
+
+        /* 左側ナビゲーション */
+        aside {
+            width: 240px;
+            background: #fff;
+            border-right: 1px solid #eee;
+            padding: 30px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .brand {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #333;
+            line-height: 1.3;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside li {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        aside a {
+            color: #555;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+
+        aside a:hover {
+            color: #3a7bd5;
+        }
+
+        aside .active {
+            font-weight: bold;
+            color: #000;
+        }
+
+        aside .sub-menu {
+            padding-left: 15px;
+            margin-top: 5px;
+            list-style: none;
+        }
+
+        aside .sub-menu li {
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+
+        /* 右側メインコンテンツ */
+        .content-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        /* MyCarLog専用：爽やかなブルースカイのグラデーションヘッダー */
+        header {
+            background: linear-gradient(135deg, #2b5876, #4e4376);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        h2 {
+            color: #2b5876;
+            border-left: 4px solid #2b5876;
+            padding-left: 10px;
+            margin-top: 40px;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.1rem;
+            margin-top: 25px;
+        }
+
+        p,
+        li {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* 特徴的なアプリアイコンエリア */
+        .app-intro-block {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .app-icon-large {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #3a7bd5, #3a6073);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .app-desc {
+            flex: 1;
+        }
+
+        .btn-store {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* ユーザーガイド用カード */
+        .guide-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 左側メニュー（MyCarLog版） -->
+    <aside>
+        <div class="brand">H.Nakazato<br>Dev</div>
+        <ul>
+            <li><a href="/">🏠 Home</a></li>
+            <li><a href="/apps/okusuri/">💊 Okusuri TopPage</a></li>
+            <li>
+                <a href="/apps/fp-juyono/">📈 FP-Juyono_TopPage</a>
+                <ul class="sub-menu">
+                    <li><a href="/apps/fp-juyono/privacy.html">📄 FP-Juyono_Privacy-policy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/apps/takken/">🏢 Takken_TopPage</a>
+                <ul class="sub-menu">
+                    <li><a href="/apps/takken/privacy.html">📄 Takken_Privacy-policy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/apps/MyCarLog/" class="active">🚗 MyCar TopPage</a>
+                <ul class="sub-menu">
+                    <li><a href="/apps/MyCarLog/privacy.html">📄 MyCar_Privacy-policy</a></li>
+                    <li><a href="/apps/MyCarLog/#userguide">📖 MyCar_Userguide</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- 右側メイン画面 -->
+    <div class="content-container">
+        <header>
+            <h1>MyCarLog TopPage</h1>
+            <p>愛車の維持管理を一元化するスマートフォンアプリ</p>
+        </header>
+
+        <main>
+            <!-- アプリ概要 -->
+            <div class="app-intro-block">
+                <div class="app-icon-large">MyCar<br>Log</div>
+                <div class="app-desc">
+                    <p style="margin: 0 0 10px 0; font-weight: bold;">うっかり忘れがちな自動車の更新・メンテナンス時期を賢く通知。</p>
+                    <p style="margin: 0;">運転免許証、車検、任意保険の更新忘れ防止機能に加え、消耗部品の定期交換サポート、燃費計算機能などを備えた愛車管理のパートナーです。</p>
+                    <a href="#" class="btn-store">App Store からダウンロード</a>
+                </div>
+            </div>
+
+            <!-- 主な機能 -->
+            <h2>🚗 主な機能</h2>
+            <ul>
+                <li><strong>各種更新時期の通知：</strong>運転免許証、車検、任意保険の満了日を登録し、更新忘れを確実に防止します。</li>
+                <li><strong>定期交換部品の管理：</strong>エンジンオイルやタイヤなど、走行距離や期間に応じた消耗品の交換時期をアラート通知。</li>
+                <li><strong>燃費計算機能：</strong>給油時の走行距離と給油量を入力するだけで、日々の燃費推移を簡単に記録・確認できます。</li>
+            </ul>
+
+            <!-- 関連規約リンク -->
+            <h2>📄 規約・ポリシー</h2>
+            <p>本アプリケーションのご利用にあたっては、以下のプライバシーポリシーをご確認ください。</p>
+            <p><a href="/apps/MyCarLog/privacy.html" style="color: #3a7bd5; font-weight: bold; text-decoration: none;">➔
+                    MyCarLog・プライバシーポリシーはこちら</a></p>
+
+            <!-- ユーザーガイド -->
+            <h2 id="userguide">📖 MyCarLog ユーザーガイド</h2>
+            <p>アプリをより便利にお使いいただくための初期設定と使い方の手順です。</p>
+
+            <div class="guide-card">
+                <h3>1. 初期登録（車両情報の追加）</h3>
+                <p>アプリ起動後、まずはご自身の愛車の情報（車種名、現在の走行距離、車検満了日など）を入力します。ここで登録した日付をベースに通知タイマーが作動します。</p>
+            </div>
+
+            <div class="guide-card">
+                <h3>2. 通知（アラート）の設定</h3>
+                <p>運転免許証や任意保険の更新日は、満了日の「1ヶ月前」「2週間前」など、ご自身の希望するタイミングでプッシュ通知を受け取れるようにカスタマイズが可能です。</p>
+            </div>
+
+            <div class="guide-card">
+                <h3>3. 日々の給油と燃費記録</h3>
+                <p>ガソリンスタンドで給油した際、その時の「総走行距離」と「給油量（リットル）」を入力してください。アプリが自動で前回の給油からの区間燃費を算出し、グラフやリストに蓄積していきます。</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takken TopPage - HiroNest Works</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            display: flex;
+        }
+
+        /* 左側ナビゲーション */
+        aside {
+            width: 240px;
+            background: #fff;
+            border-right: 1px solid #eee;
+            padding: 30px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        .brand {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #333;
+            line-height: 1.3;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside li {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        aside a {
+            color: #555;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+
+        aside a:hover {
+            color: #2e7d32;
+        }
+
+        aside .active {
+            font-weight: bold;
+            color: #000;
+        }
+
+        aside .sub-menu {
+            padding-left: 15px;
+            margin-top: 5px;
+            list-style: none;
+        }
+
+        aside .sub-menu li {
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+
+        /* 右側メインコンテンツ */
+        .content-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        /* Takken専用：誠実な学習をイメージしたグリーン系グラデーションヘッダー */
+        header {
+            background: linear-gradient(135deg, #1b5e20, #2e7d32);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        h2 {
+            color: #1b5e20;
+            border-left: 4px solid #1b5e20;
+            padding-left: 10px;
+            margin-top: 40px;
+            font-size: 1.4rem;
+        }
+
+        p,
+        li {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* 特徴的なアプリアイコンエリア */
+        .app-intro-block {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: #f1f8e9;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #c8e6c9;
+        }
+
+        .app-icon-large {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #1b5e20, #4caf50);
+            box-shadow: 0 4px 10px rgba(27, 94, 32, 0.2);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .app-desc {
+            flex: 1;
+        }
+
+        .btn-store {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside>
+        <div class="brand">H.Nakazato<br>Dev</div>
+        <ul>
+            <li><a href="/">🏠 Home</a></li>
+            <li><a href="/apps/okusuri/">💊 Okusuri TopPage</a></li>
+            <li>
+                <a href="/apps/fp-juyono/">📈 FP-Juyono_TopPage</a>
+                <ul class="sub-menu">
+                    <li><a href="/apps/fp-juyono/privacy.html">📄 FP-Juyono_Privacy-policy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/apps/takken/" class="active">🏢 Takken_TopPage</a>
+                <ul class="sub-menu">
+                    <li><a href="/apps/takken/privacy.html">📄 Takken_Privacy-policy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/apps/MyCarLog/">🚗 MyCar TopPage</a>
+                <ul class="sub-menu">
+                    <li><a href="/apps/MyCarLog/privacy.html">📄 MyCar_Privacy-policy</a></li>
+                    <li><a href="/apps/MyCarLog/#userguide">📖 MyCar_Userguide</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="content-container">
+        <header>
+            <h1>Takken TopPage</h1>
+            <p>宅地建物取引士試験 合格支援アプリケーション</p>
+        </header>
+
+        <main>
+            <div class="app-intro-block">
+                <div class="app-icon-large">宅<br>建</div>
+                <div class="app-desc">
+                    <p style="margin: 0 0 10px 0; font-weight: bold;">不動産取引のプロフェッショナルを目指すあなたへ。</p>
+                    <p style="margin: 0;">
+                        宅建士試験の膨大な学習範囲を網羅的にカバー。権利関係、宅建業法、法令上の制限、税・その他といった各分野を体系的に学習し、着実な合格力を身につけるための学習サポートツールです。</p>
+                    <a href="#" class="btn-store">App Store からダウンロード</a>
+                </div>
+            </div>
+
+            <h2>🏢 主な機能</h2>
+            <ul>
+                <li><strong>試験分野の体系的学習：</strong>出題頻度が高い項目を中心に、宅建士試験に必須の知識を体系的に解説しています。</li>
+                <li><strong>スキマ時間活用：</strong>外出先や移動中でも学習を進められるよう、最適化されたUI設計で日々の継続学習を支援します。</li>
+                <li><strong>進捗管理サポート：</strong>各分野の学習進度を把握し、試験本番を見据えた計画的な学習をサポートします。</li>
+            </ul>
+
+            <h2>📄 規約・ポリシー</h2>
+            <p>本アプリケーションのご利用にあたっては、以下のプライバシーポリシーをご確認ください。</p>
+            <p><a href="/apps/takken/privacy.html" style="color: #2e7d32; font-weight: bold; text-decoration: none;">➔
+                    Takken・プライバシーポリシーはこちら</a></p>
+        </main>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP-Juyono TopPage - HiroNest Works</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            display: flex;
+        }
+
+        /* 左側ナビゲーション */
+        aside {
+            width: 240px;
+            background: #fff;
+            border-right: 1px solid #eee;
+            padding: 30px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        .brand {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #333;
+            line-height: 1.3;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside li {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        aside a {
+            color: #555;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+
+        aside a:hover {
+            color: #d9383a;
+        }
+
+        aside .active {
+            font-weight: bold;
+            color: #000;
+        }
+
+        aside .sub-menu {
+            padding-left: 15px;
+            margin-top: 5px;
+            list-style: none;
+        }
+
+        aside .sub-menu li {
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+
+        /* 右側メインコンテンツ */
+        .content-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        /* FP-Juyono専用：情熱的な学習をイメージしたレッド系グラデーションヘッダー */
+        header {
+            background: linear-gradient(135deg, #a11a4d, #d9383a);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        h2 {
+            color: #a11a4d;
+            border-left: 4px solid #a11a4d;
+            padding-left: 10px;
+            margin-top: 40px;
+            font-size: 1.4rem;
+        }
+
+        p,
+        li {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* 特徴的なアプリアイコンエリア */
+        .app-intro-block {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: #fff5f7;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #fcdede;
+        }
+
+        .app-icon-large {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #a11a4d, #ff4e50);
+            box-shadow: 0 4px 10px rgba(161, 26, 77, 0.2);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.1rem;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .app-desc {
+            flex: 1;
+        }
+
+        .btn-store {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 左側メニュー（共通構成・FP-Juyonoアクティブ状態） -->
+    <aside>
+        <div class="brand">H.Nakazato<br>Dev</div>
+        <ul>
+            <li><a href="/">🏠 Home</a></li>
+            <li><a href="/apps/okusuri/">💊 Okusuri TopPage</a></li>
+            <li>
+                <a href="/apps/fp-juyono/" class="active">📈 FP-Juyono_TopPage</a>
+                <ul class="sub-menu">
+                    <li><a href="/apps/fp-juyono/privacy.html">📄 FP-Juyono_Privacy-policy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/apps/takken/">🏢 Takken_TopPage</a>
+                <ul class="sub-menu">
+                    <li><a href="/apps/takken/privacy.html">📄 Takken_Privacy-policy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/apps/MyCarLog/">🚗 MyCar TopPage</a>
+                <ul class="sub-menu">
+                    <li><a href="/apps/MyCarLog/privacy.html">📄 MyCar_Privacy-policy</a></li>
+                    <li><a href="/apps/MyCarLog/#userguide">📖 MyCar_Userguide</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- 右側メイン画面 -->
+    <div class="content-container">
+        <header>
+            <h1>FP-Juyono TopPage</h1>
+            <p>ファイナンシャルプランナー試験 重要出題ポイント学習サポートアプリ</p>
+        </header>
+
+        <main>
+            <!-- アプリ概要 -->
+            <div class="app-intro-block">
+                <div class="app-icon-large">FP<br>重要野</div>
+                <div class="app-desc">
+                    <p style="margin: 0 0 10px 0; font-weight: bold;">膨大な試験範囲から、合格に直結する「重要野」を徹底攻略。</p>
+                    <p style="margin: 0;">
+                        FP（ファイナンシャルプランナー）試験の合格を目指す方のための学習支援アプリケーションです。頻出テーマの要点整理、スキマ時間を活かした効率的な一問一答など、合格に必要な知識の定着を強力にバックアップします。
+                    </p>
+                    <a href="#" class="btn-store">App Store からダウンロード</a>
+                </div>
+            </div>
+
+            <!-- 主な機能 -->
+            <h2>📈 主な機能</h2>
+            <ul>
+                <li><strong>重要ポイントの厳選解説：</strong>ライフプランニング、リスク管理、金融資産運用、タックスプランニング、不動産、相続・事業承継の6分野から、頻出テーマを分かりやすく凝縮。
+                </li>
+                <li><strong>効率的な反復学習：</strong>通勤・通学中や日々のちょっとした空き時間に、スマホ片手でサクサク進められるインプット＆アウトプット設計。</li>
+                <li><strong>苦手分野の可視化：</strong>自身の学習達成度や間違えやすいポイントを記録し、試験直前の総仕上げまで効率よく導きます。</li>
+            </ul>
+
+            <!-- 関連規約リンク -->
+            <h2>📄 規約・ポリシー</h2>
+            <p>本アプリケーションのご利用にあたっては、以下のプライバシーポリシーをご確認ください。</p>
+            <p><a href="/apps/fp-juyono/privacy.html"
+                    style="color: #a11a4d; font-weight: bold; text-decoration: none;">➔ FP-Juyono・プライバシーポリシーはこちら</a></p>
+        </main>
+    </div>
+
+</body>
+
+</html>
