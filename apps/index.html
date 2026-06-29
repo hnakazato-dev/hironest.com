@@ -80,9 +80,9 @@
             min-width: 0;
         }
 
-        /* 富士山バナー風のヘッダー（仮背景色、後ほど画像に変更可能） */
+        /* 夕暮れ〜朝焼け風の綺麗なグラデーションヘッダー */
         header {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            background: linear-gradient(135deg, #1f4068, #3a6073, #e6739f);
             color: #fff;
             padding: 60px 20px;
             text-align: center;
@@ -150,7 +150,7 @@
             align-items: flex-start;
         }
 
-        /* アプリのアイコン枠 */
+        /* アプリのアイコン枠（CSSグラデーションで綺麗に表現） */
         .app-icon {
             width: 120px;
             height: 120px;
@@ -217,7 +217,6 @@
 
 <body>
 
-    <!-- 左側メニュー（Googleサイトの構成を完全再現） -->
     <aside>
         <div class="brand">H.Nakazato<br>Dev</div>
         <ul>
@@ -245,7 +244,6 @@
         </ul>
     </aside>
 
-    <!-- 右側メイン画面 -->
     <div class="content-container">
         <header>
             <h1>開発アプリケーション一覧</h1>
@@ -253,17 +251,14 @@
         </header>
 
         <main>
-            <!-- イントロダクション -->
             <div class="intro-section">
                 <h2>日々の生活に役立つアプリを掲載していきます。</h2>
                 <p class="lifework">定年後のライフワークとして、アプリ開発に取り組んでいます。</p>
                 <p class="thanks">少しでも社会への恩返しになればという想いから、『基本無料』で制作物を公開しております。皆様の学習や生活の一助となれば幸いです。</p>
             </div>
 
-            <!-- アプリケーション一覧（2列グリッド） -->
             <div class="app-grid">
 
-                <!-- FP重要数字 -->
                 <div class="app-card">
                     <div class="app-icon icon-fp">FP3級<br>FP2級</div>
                     <div class="app-info">
@@ -274,7 +269,6 @@
                     </div>
                 </div>
 
-                <!-- 宅建重要数字 -->
                 <div class="app-card">
                     <div class="app-icon icon-takken">宅建</div>
                     <div class="app-info">
@@ -285,7 +279,6 @@
                     </div>
                 </div>
 
-                <!-- マイカーログ -->
                 <div class="app-card">
                     <div class="app-icon icon-mycar">マイカー<br>ログ</div>
                     <div class="app-info">
@@ -295,7 +288,6 @@
                     </div>
                 </div>
 
-                <!-- Okusuri -->
                 <div class="app-card">
                     <div class="app-icon icon-okusuri">作成中</div>
                     <div class="app-info">

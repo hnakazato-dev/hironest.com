@@ -4,91 +4,96 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HiroNest Works | 公式サイト</title>
+    <title>HiroNest Works</title>
     <style>
         body {
             font-family: sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
+            background: #fafafa;
         }
 
         header {
-            border-bottom: 2px solid #a11a4d;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
             text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #a11a4d;
+            margin-bottom: 40px;
         }
 
-        h1 {
+        header h1 {
             color: #a11a4d;
+            margin: 0;
+            font-size: 2.2rem;
         }
 
-        .subtitle {
-            font-weight: bold;
-            font-size: 1.2rem;
+        header p {
+            color: #666;
+            margin: 10px 0 0 0;
         }
 
-        .intro {
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 30px;
+        h2 {
+            color: #333;
+            border-left: 4px solid #a11a4d;
+            padding-left: 10px;
+            margin-top: 40px;
         }
 
-        .app-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .app-card {
-            border: 1px solid #ddd;
+        .menu-box {
+            background: #fff;
+            border: 1px solid #eee;
             border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
-        .app-card h3 {
+        .menu-box p {
             margin-top: 0;
-            color: #a11a4d;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
         }
 
-        .btn {
+        .btn-link {
             display: inline-block;
             background: #a11a4d;
             color: #fff;
-            padding: 8px 16px;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 4px;
-            margin-top: 10px;
-            font-size: 0.9rem;
+            border-radius: 5px;
+            font-weight: bold;
         }
 
-        .btn:hover {
+        .btn-link:hover {
             background: #80123a;
         }
 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: #fff;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #eee;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background: #f9f9f9;
+            width: 30%;
+        }
+
         footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
+            margin-top: 60px;
             text-align: center;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: #666;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -97,52 +102,44 @@
 
     <header>
         <h1>HiroNest Works</h1>
-        <p class="subtitle">日々の生活に役立つアプリを掲載していきます。</p>
+        <p>スマートフォンアプリケーション開発</p>
     </header>
 
     <main>
-        <div class="intro">
-            <p><strong>定年後のライフワークとして、アプリ開発に取り組んでいます。</strong></p>
-            <p>少しでも社会への恩返しになればという想いから、『基本無料』で制作物を公開しております。皆様の学習や生活の一助となれば幸いです。</p>
+        <div class="menu-box">
+            <h2>📱 開発アプリケーション</h2>
+            <p>定年後のライフワークとして、日々の生活や資格学習に役立つiOSアプリケーションを制作・公開しています。</p>
+            <a href="/apps/" class="btn-link">開発アプリケーション一覧を見る</a>
         </div>
 
-        <h2>公開中・作成中のアプリ一覧</h2>
-        <div class="app-grid">
+        <h2>🏢 概要</h2>
+        <table>
+            <tr>
+                <th>屋号</th>
+                <td>HiroNest Works（ヒロネスト ワークス）</td>
+            </tr>
+            <tr>
+                <th>事業内容</th>
+                <td>スマートフォン向けアプリケーションの企画・開発・運営</td>
+            </tr>
+            <tr>
+                <th>代表者</th>
+                <td>H. Nakazato</td>
+            </tr>
+            <tr>
+                <th>お問い合わせ</th>
+                <td>info@hironest.com</td>
+            </tr>
+        </table>
 
-            <div class="app-card">
-                <h3>FP重要数字</h3>
-                <p>FP試験で得点源となる『数字』に特化した暗記トレーニングアプリです。音声出力機能により、通勤時間やスキマ時間の学習にお役立ていただけます。また、自作問題機能を使って、ご自身専用の学習リストを作成いただけます。
-                </p>
-                <a href="/apps/fp-juyono/" class="btn">操作ガイド / 規約</a>
-            </div>
-
-            <div class="app-card">
-                <h3>宅建重要数字</h3>
-                <p>宅建試験で得点源となる『数字』に特化した暗記トレーニングアプリです。音声出力機能により、通勤時間やスキマ時間の学習にお役立ていただけます。また、自作問題機能を使って、ご自身専用の学習リストを作成いただけます。
-                </p>
-                <a href="/apps/takken/" class="btn">操作ガイド / 規約</a>
-            </div>
-
-            <div class="app-card">
-                <h3>マイカーログ</h3>
-                <p>免許、車検、任意保険の更新防止の通知機能。定期交換部品の通知機能、燃費計算機能。</p>
-                <a href="/apps/my-car-log/" class="btn">操作ガイド / 規約</a>
-            </div>
-
-            <div class="app-card">
-                <h3>Okusuri</h3>
-                <p>作成中</p>
-                <a href="/apps/okusuri/" class="btn">操作ガイド / 規約</a>
-            </div>
-
-        </div>
+        <h2>📄 各種規約</h2>
+        <p>当方が提供するサービスおよびアプリケーションにおける個人情報の取り扱いについては、以下のプライバシーポリシーをご確認ください。</p>
+        <p><a href="/privacy/" style="color: #a11a4d; font-weight: bold; text-decoration: none;">➔
+                個人情報保護方針（全体のプライバシーポリシー）</a></p>
     </main>
 
     <footer>
-        <p>© 2026 HiroNest Works (H.Nakazato Dev) All Rights Reserved.</p>
-        <p>
-            <a href="/privacy/">組織プライバシーポリシー</a>
-        </p>
+        <p>&copy; 2026 HiroNest Works All Rights Reserved.</p>
     </footer>
 
 </body>
