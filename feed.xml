@@ -3,10 +3,22 @@
     <title>HiroNest</title>
     <link href="https://hironest.com/feed.xml" rel="self" />
     <link href="https://hironest.com" />
-    <updated>1970-01-01T09:00:00+09:00</updated>
+    <updated>2026-06-29T23:10:18+09:00</updated>
     <author>
         <name>HiroNest Works</name>
     </author>
     <id>https://hironest.com</id>
 
+    <entry>
+        <title>テスト投稿</title>
+        <author>
+            <name>HiroNest Works</name>
+        </author>
+        <link href="https://hironest.com/tesutotou-gao.html"/>
+        <id>https://hironest.com/tesutotou-gao.html</id>
+
+        <updated>2026-06-29T23:10:18+09:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
 </feed>

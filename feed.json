@@ -9,5 +9,17 @@
         "name": "HiroNest Works"
     },
     "items": [
+        {
+            "id": "https://hironest.com/tesutotou-gao.html",
+            "url": "https://hironest.com/tesutotou-gao.html",
+            "title": "テスト投稿",
+            "author": {
+                "name": "HiroNest Works"
+            },
+            "tags": [
+            ],
+            "date_published": "2026-06-29T23:10:18+09:00",
+            "date_modified": "2026-06-29T23:10:18+09:00"
+        }
     ]
 }
